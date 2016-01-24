@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 /////////// unique character 1.1 ////////////////
-class UniqueChar {
+class a {
 	
 	public boolean isUniqueChar(){
 		
