@@ -20,13 +20,18 @@ public class Main {
 
 	///////////// Check Permutation /////////////
 		
-		CheckPermutation cp = new  CheckPermutation();
+		/*CheckPermutation cp = new  CheckPermutation();
 		
 		if(cp.isPermutation())
 			System.out.println("Given strings are anagrams");
 		else
 			System.out.println("Given strings are not anagrams");
+		*/
 		
+		String input  = "ab cd ef";
+		ReplaceChar rc = new ReplaceChar();
+		String output = rc.replaceCharWith(' ', "%20", input);
+		System.out.println("Input given: " + input + "\n Output: " + output);
 	}
 
 }
