@@ -80,7 +80,19 @@ public class Main {
 		int wrappers = scan.nextInt();
 		Chocolates choc = new Chocolates();		
 		int output = choc.numChocolates(cost, amount, wrappers,0,0);
-		System.out.println("Number of chocolates obtained: "+ output);*/
+		System.out.println("Number of chocolates obtained: "+ output);
+		
+		/////////////// Encryption (Random) ////////////////
+		
+		System.out.println("Enter any plain text to be encrypted: ");
+		String input = scan.next();
+		System.out.println("Enter any number: ");
+		int num = scan.nextInt();
+		Encryption enc = new Encryption();
+		String output = enc.encrypt(input, num%26);
+		System.out.println("Given text:" + input);
+		System.out.println("Encrypted text:" + output);*/
+		 
 	}
 
 }
