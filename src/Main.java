@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -7,7 +8,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		Scanner scan = new Scanner(System.in);
 		/* /////// unique character 1.1 /////
 
 		
@@ -38,7 +39,7 @@ public class Main {
 		
 		///////////// String Compress 1.5 /////////////
 
-		/*Scanner scan = new Scanner(System.in);
+		/*
 		System.out.println("Enter any string to be compressed: ");
 		String input = scan.next();
 		StringCompress sc = new StringCompress();
@@ -47,12 +48,39 @@ public class Main {
 			System.out.println("Input given: "+input+"\n Output: "+output);
 		}else{
 			System.out.println("Invalid String: Empty");
-		}*/
+		}
 		
-		Scanner scan = new Scanner(System.in);
+		///////////// Fibonacii (Random) /////////////
 		System.out.println("Enter the required length of fibonacci series: ");
 		int count = scan.nextInt();
 		Fibonacci f = new Fibonacci(count);
+		
+		///////////// Reduce Array (Random) /////////////
+	
+		System.out.println("Enter the size of array: ");
+		int size = scan.nextInt();
+		int[] arr = new int[size];
+		for(int i=0; i < size; i++){
+			System.out.println("Enter "+ (i+1) + " number of the array");
+			arr[i] = scan.nextInt();
+		}
+		
+		ReduceByMin red = new ReduceByMin();
+		Arrays.sort(arr);
+		System.out.println(arr.length);
+		red.reduce(arr);
+		
+		/////////////// Chocolates (Random) ////////////////
+		
+		System.out.println("Enter the cost of each chocolate: ");
+		int cost = scan.nextInt();
+		System.out.println("Enter the amount given: ");
+		int amount = scan.nextInt();
+		System.out.println("Enter the number of wrappers to be returned to oobtain a free chocolate: ");
+		int wrappers = scan.nextInt();
+		Chocolates choc = new Chocolates();		
+		int output = choc.numChocolates(cost, amount, wrappers,0,0);
+		System.out.println("Number of chocolates obtained: "+ output);*/
 	}
 
 }
