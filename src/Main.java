@@ -91,7 +91,19 @@ public class Main {
 		Encryption enc = new Encryption();
 		String output = enc.encrypt(input, num%26);
 		System.out.println("Given text:" + input);
-		System.out.println("Encrypted text:" + output);*/
+		System.out.println("Encrypted text:" + output);
+		
+		/////////////// Pangram (Random) ////////////////
+		
+		System.out.println("Enter any string: ");
+		String input = scan.nextLine();
+		Pangram pg = new Pangram();
+		boolean output = pg.isPangram(input);
+		if(output){
+			System.out.println("Given string " + input + " is a Pangram"); 
+		}else{
+			System.out.println("Given string " + input + " is not a Pangram");
+		}*/
 		 
 	}
 
