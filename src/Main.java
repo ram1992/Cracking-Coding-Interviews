@@ -104,6 +104,17 @@ public class Main {
 		}else{
 			System.out.println("Given string " + input + " is not a Pangram");
 		}*/
+		
+		//////// Number of substring occurences(Random) ///////
+		
+		System.out.println("Enter any string: ");
+		String inputStr = scan.next();
+		System.out.println("Enter any sub string: ");
+		String inputSubStr = scan.next();
+		NumSubString nbs = new NumSubString ();
+		//int occurence = nbs.numSubString(inputStr, inputSubStr); // with out using string functions
+		int occurence = nbs.numSubString2(inputStr, inputSubStr); // using string functions
+		System.out.println("Number of occurences of substring "+inputSubStr+": " + occurence);
 		 
 	}
 
